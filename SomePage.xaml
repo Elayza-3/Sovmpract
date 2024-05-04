@@ -1,0 +1,25 @@
+﻿<Page x:Class="WpfApp1.SomePage"
+      xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+      xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+      xmlns:local="clr-namespace:WpfApp1"
+      Title="SomePage">
+    <Grid>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="Auto"/>
+            <RowDefinition Height="*"/>
+            <RowDefinition Height="Auto"/>
+        </Grid.RowDefinitions>
+
+        <StackPanel Grid.Row="0" VerticalAlignment="Center" HorizontalAlignment="Center">
+            <TextBlock Text="{Binding A}" FontSize="24" Margin="0 0 0 20"/>
+        </StackPanel>
+
+        <StackPanel Grid.Row="1" VerticalAlignment="Center" HorizontalAlignment="Center">
+            <local:Control AB="Images/1.jpg" AC="{Binding B}" Margin="0 20"/>
+            <local:Control AB="Images/1.jpg" AC="{Binding C}" Margin="0 20"/>
+            <local:Control AB="Images/1.jpg" AC="{Binding D}" Margin="0 20"/>
+        </StackPanel>
+
+        <Button Grid.Row="2" Content="Выйти" Click="F" HorizontalAlignment="Left" VerticalAlignment="Bottom" Margin="0 20 0 0" />
+    </Grid>
+</Page>
